@@ -44,4 +44,3 @@ df.to_excel('hs_voc.xlsx', encoding='utf-8-sig', columns=['classification', 'voc
 
 tmp = pd.read_excel('hs_voc.xlsx', index_col=0)
 tmp
-
