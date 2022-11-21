@@ -1,7 +1,7 @@
 CREATE TABLE elem_voc 
 (
-    Orders varchar(5),
-    Vocabulary nvarchar(300),
+    Orders int,
+    Vocabulary nvarchar(300) primary key,
     Chinese	nvarchar(300)
 );
 
