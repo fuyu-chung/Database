@@ -1,7 +1,7 @@
 CREATE TABLE jhs_voc 
 (
-    Orders varchar(5),
-    Vocabulary nvarchar(300),
+    Orders int,
+    Vocabulary nvarchar(300) primary key,
     Chinese	nvarchar(300)
 );
 
@@ -119,8 +119,7 @@ INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('111', N'bite', N'[動
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('112', N'black', N'[形容詞] 黑色的;[名詞] 黑色、美國黑人');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('113', N'blackboard', N'[名詞] 黑板');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('114', N'blank', N'[形容詞] 空白的、空的,無內容的、茫然的;[名詞] 空白');
-INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('115', N'blanket', N'[動詞] (似)用毯覆蓋、掩蓋');
-INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('116', N'blanket', N'[名詞] 毯子');
+INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('115', N'blanket', N'[動詞] (似)用毯覆蓋、掩蓋;[名詞] 毯子');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('117', N'blind', N'[形容詞] 瞎的;[動詞] 使看不見、使失明、使失去理智');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('118', N'block', N'[動詞] 阻塞;[名詞] 街區');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('119', N'blow', N'[動詞] 吹;[名詞] 吹動、吹氣、強風、吹牛');
@@ -138,8 +137,7 @@ INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('130', N'boss', N'[動
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('131', N'both', N'[形容詞] 兩者;[副詞] 並、又、兩者皆;[代名詞] 兩者(都)');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('132', N'bottle', N'[動詞] 把...裝入瓶中、約束、抑制(感情)、隱藏;[名詞] 瓶子');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('133', N'bottom', N'[形容詞] 最低的、最後的、最下的;[動詞] 基於、根據、到達底部、降至最低點;[名詞] 底部、屁股');
-INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('134', N'bow', N'[動詞] 鞠躬');
-INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('135', N'bow', N'[名詞] 弓、鞠躬、蝴蝶結');
+INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('134', N'bow', N'[動詞] 鞠躬;[名詞] 弓、鞠躬、蝴蝶結');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('136', N'bowl', N'[名詞] 碗');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('137', N'box', N'[動詞] 把...裝箱(或盒等);[名詞] 箱、盒、匣');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('138', N'boy', N'[名詞] 男孩');
@@ -157,8 +155,7 @@ INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('149', N'bug', N'[動�
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('150', N'build', N'[動詞] 建造、蓋');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('151', N'bun', N'[名詞] 小圓麵包');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('152', N'burger', N'[名詞] 漢堡牛肉餅');
-INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('153', N'burn', N'[動詞] 燒、燙傷');
-INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('154', N'burn', N'[名詞] 灼傷');
+INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('153', N'burn', N'[動詞] 燒、燙傷;[名詞] 灼傷');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('155', N'bus', N'[動詞] 用公車運送;[名詞] 公車');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('156', N'business', N'[名詞] 商業、事');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('157', N'businessman', N'[名詞] 商人');
@@ -689,8 +686,7 @@ INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('681', N'mop', N'[動�
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('682', N'more', N'[形容詞] 更多的;[副詞] 更多、另外、再;[名詞] 更多的數量;[代名詞] 更多的數量');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('683', N'morning', N'[名詞] 早晨');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('684', N'most', N'[形容詞] 最多的、大部分的;[副詞] 最、最多、非常、很;[代名詞] 大部分');
-INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('685', N'mother', N'[動詞] 生下、產生出');
-INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('686', N'mother', N'[名詞] 母親');
+INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('685', N'mother', N'[動詞] 生下、產生出;[名詞] 母親');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('687', N'motorcycle', N'[名詞] 機車');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('688', N'mountain', N'[名詞] 山');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('689', N'mouse', N'[名詞] 老鼠、滑鼠');
@@ -754,8 +750,7 @@ INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('746', N'OK', N'[形�
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('747', N'old', N'[形容詞] 年老的');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('748', N'on', N'[副詞] 繼續、向前、開著、在進行中;[介系詞] 在…上面');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('749', N'once', N'[副詞] 一次;[連接詞] 一旦、一經...便;[名詞] 一次、一回');
-INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('750', N'one', N'[形容詞] 一個的;[名詞] 一、一個人、一件事物');
-INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('751', N'one', N'[代名詞] 任何人');
+INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('750', N'one', N'[形容詞] 一個的;[名詞] 一、一個人、一件事物;[代名詞] 任何人');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('752', N'only', N'[形容詞] 唯一的，僅有的、最好的;[副詞] 只、僅僅、才、不料、反而;[連接詞] 可是、不過、要不是、若非');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('753', N'open', N'[動詞] 打開;[形容詞] 打開的、空曠的、未定的、營業的、公開的;[名詞] 戶外、野外、曠野、空地、公開賽');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('754', N'or', N'[連接詞] 或');
@@ -858,11 +853,9 @@ INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('850', N'quarter', N'[
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('851', N'queen', N'[名詞] 皇后');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('852', N'question', N'[動詞] 詢問;[名詞] 問題');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('853', N'quick', N'[形容詞] 快的;[副詞] 快、迅速地');
-INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('854', N'quiet', N'[形容詞] 安靜的;[動詞] 使安靜、撫慰、安慰');
-INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('855', N'quiet', N'[名詞] 安靜、寂靜、安穩、和平');
+INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('854', N'quiet', N'[形容詞] 安靜的;[動詞] 使安靜、撫慰、安慰;[名詞] 安靜、寂靜、安穩、和平');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('856', N'quite', N'[副詞] 完全地、相當');
-INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('857', N'quiz', N'[動詞] 挖苦,嘲弄、考問');
-INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('858', N'quiz', N'[名詞] 小考');
+INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('857', N'quiz', N'[動詞] 挖苦,嘲弄、考問;[名詞] 小考');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('859', N'R.O.C.', N'[縮寫] 中華民國');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('860', N'rabbit', N'[名詞] 兔子');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('861', N'race', N'[動詞] 與...賽跑;[名詞] 競賽、(生物的)種類');
@@ -1060,8 +1053,7 @@ INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('1052', N'surprise', N
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('1053', N'surprised', N'[形容詞] 驚訝的');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('1054', N'sweater', N'[名詞] 毛衣');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('1055', N'sweet', N'[形容詞] 甜的;[名詞] (餐後的)甜點、(用作稱呼語)親愛的、寶貝');
-INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('1056', N'swim', N'[動詞] 游泳');
-INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('1057', N'swim', N'[名詞] 游泳、暈眩,眼花、潮流');
+INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('1056', N'swim', N'[動詞] 游泳;[名詞] 游泳、暈眩,眼花、潮流');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('1058', N'swing', N'[動詞] 搖擺、揮動;[名詞] 鞦韆、搖擺音樂');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('1059', N'table', N'[名詞] 桌子、表,目錄');
 INSERT INTO jhs_voc (Orders, Vocabulary, Chinese) VALUES ('1060', N'tail', N'[動詞] 尾隨、盯梢、變少、縮小;[名詞] 尾巴');
